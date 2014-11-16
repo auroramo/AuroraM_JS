@@ -1,0 +1,26 @@
+{
+  "name": "tutorial-nodejs-master",
+  "version": "1.0.0",
+  "description": "Tutorial node",
+  "main": "ejemplo1-node.js",
+  "dependencies": {
+    "express": "^4.10.1",
+    "fs": "^0.0.2",
+    "underscore": "^1.7.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "auroramo"
+  },
+  "keywords": [
+    "node",
+    "mongo",
+    "git"
+  ],
+  "author": "varios",
+  "license": "ISC"
+}

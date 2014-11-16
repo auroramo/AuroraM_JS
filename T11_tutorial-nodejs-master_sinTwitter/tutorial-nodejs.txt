@@ -1,0 +1,44 @@
+1. Instalar Node (nodejs.org)
+2. Directorio de trabajo para aplicaciones nodejs
+3. Instalar npm (si fuera necesario, ojo puede que en Windows haya que agregar una carpeta llamada npm en \Users\nombre-usuario\AppData\Roaming) <-- A馻dida
+4. Examinar ejemplo1-node.js y realizar en orden todos los ejemplos 
+	(ejecutar en Node.js command prompt -- node [nombreArchivo.extension])
+5. Examinar servidor.js y realizar en orden todos los ejemplos (echo!)
+6. Examinar the Node Package Manager
+	 instalar npm install underscore -g [en consola node.js] (Underscore for Node.js without cross-browser checks)
+	 actualizar m贸dulos: npm update unserscore
+	 buscar m贸dulos: npmjs.org  ->(s髄o "underscore" y "express")
+	 instalar m贸dulos: npm install nombre-module
+7. Instalar express  ->(Fast, unopinionated, minimalist web framework)
+	npm install express  (ok!)
+	Realizar todos los ejemplos del archivo node-express.js  (ok!)
+8. Conectar a GitHub
+	Realizar los ejemplos del archivo connect-git.js
+9. Fabricar m贸dulos
+	ejemplo-module.js
+	ej-modulo-server.js
+10. Publicar m贸dulos en npm
+	crear package.json -> npm init    //https://egghead.io/lessons/nodejs-npm-init
+	crear una cuenta en npm -> npm adduser
+	publicar m贸dulo -> npm publish
+	cambiar la versi贸n -> npm publish  (ok!)
+11. Mongodb
+	instalar mongo (mongodb.org) (ok!)
+	npm install mongodb (ok!)
+	comprobar servicio y consola -> Crear carpeta data y ejecutar mongod --dbpath data (como admin)
+		-> http://localhost:27017  (ok!)
+		-> abrir otra consola (no cerrar esa)  
+	ejemplo1-mongo.js  (ok!)
+	ejemplo1-mongo-consulta.js  
+	comprobar elementos desde consola mongo: show dbs / use nombre-db / show collections / db.user.find()  (ok!)
+	ejemplo2-mongo-server.js (usamos la funcion getUser)
+
+(Para los siguientes ejemplos se utiliza la libreria ntwitter. Consulta el API en https://github.com/AvianFlu/ntwitter)
+	-> npm install ntwitter (en Node.js command prompt)  (ok!)
+(Para ver la estructura json de los tweets consultar: https://dev.twitter.com/overview/api/tweets)
+
+12. Ejemplo para conectar al API de twitter: ejemplo-twitter/tw1.js
+13. Insertar twits en la base de datos prueba: ejemplo-twitter/tw2-mongo.js
+14. Leer twits de Mongo y publicarlos en la web: ejemplo-twitter/tw3-leerDeMongo.js.js
+15. Leer twits en tiempo real y publicarlos en la web: ejemplo-twitter/tw4-leerDeMongoRT.js
+16. Igual que el ejemplo anterior pero sin necesidad de actualizar: ejemplo-twitter/tw5-leerDeMongoRT-sinAct.js
